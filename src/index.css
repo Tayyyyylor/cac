@@ -24,11 +24,11 @@
 }
 @font-face {
   font-family: codeNextBold;
-  src: url("../fonts/codeNext/Fontfabric\ -\ Code\ Next\ ExtraBold.otf")
+  src: url("../fonts/codeNext/codeNextExtraBold.otf")
 }
 @font-face {
   font-family: Kinetika;
-  src: url("../fonts/Kinetika/Kastelov\ -\ Kinetika\ Ultra.otf")
+  src: url("../fonts/Kinetika/KinetikaUltra.otf")
 }
 
 * {
