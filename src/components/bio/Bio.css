@@ -28,6 +28,7 @@
 .text-bio {
     text-align: justify;
     text-justify: auto;
+    margin: 0 225px;
 }
 
 .name-bio {

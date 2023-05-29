@@ -20,42 +20,48 @@ function Navbar() {
       {isMobile ? (
         <nav className={`nav-mobile ${menuIsOpen ? "active" : "" }`}>
           <div  className="navbar-link margin-top" >
-           Langage verbal
+            verbal
           </div>
           <div  className="navbar-link margin-top" >
          
 
-          Langage non-verbal
+           non-verbal
  
 
           </div>
           <button className="navbar-link margin-top" >
-          Langage écrit
+          écrit
     
           </button>
-          <div className="navbar-link margin-top" >
-          Ateliers
+          <div className="navbar-link">
+            services
           </div>
-          <div className="navbar-link margin-top" >
-          Coaching
+          <div className="navbar-link">
+            témoignages
+          </div>
+          <div className="navbar-link">
+            contact
           </div>
         </nav>
       ) : (
         <nav className="nav-desktop">
           <div className="navbar-link">
-            Langage verbal
+            verbal
           </div>
           <div className="navbar-link">
-            Langage non-verbal
+           non-verbal
           </div>
           <div className="navbar-link">
-            Langage écrit 
+           écrit 
           </div>
           <div className="navbar-link">
-            Ateliers
+            services
           </div>
           <div className="navbar-link">
-            Coaching
+            témoignages
+          </div>
+          <div className="navbar-link">
+            contact
           </div>
         </nav>
       )}

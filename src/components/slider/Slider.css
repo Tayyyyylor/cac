@@ -46,12 +46,12 @@ cursor: pointer;
   
     color: white;
   
-    font-size: 50px;
+    font-size: 38px;
 }
 
 .p-slider {
     color: white;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
@@ -72,7 +72,7 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 58%;
+    top: 73%;
     left: 4%;
   }
 

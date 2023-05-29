@@ -79,7 +79,9 @@ nav.active {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 3rem;
+    margin-right: 70px;
+    text-transform: uppercase;
 }
 
 .margin-top {
