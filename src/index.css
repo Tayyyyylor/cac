@@ -5,30 +5,16 @@
 
 @font-face {
   font-family: curveUltra;
-  src: url("../fonts/Curve/Curve-UltraBold-Italic.otf")
+  src: url("../fonts/Curve-UltraBold-Italic.otf")
 }
 
-@font-face {
-  font-family: curveExtra;
-  src: url("../fonts/Curve/Curve-ExtraBold.otf")
-}
-
-@font-face {
-  font-family: curveBold;
-  src: url("../fonts/Curve/Curve-Bold.otf")
-}
-
-@font-face {
-  font-family: curveRegular;
-  src: url("../fonts/Curve/Curve-Regular.otf")
-}
 @font-face {
   font-family: codeNextBold;
-  src: url("../fonts/codeNext/codeNextExtraBold.otf")
+  src: url("../fonts/codeNextExtraBold.otf")
 }
 @font-face {
   font-family: Kinetika;
-  src: url("../fonts/Kinetika/KinetikaUltra.otf")
+  src: url("../fonts/KinetikaUltra.otf")
 }
 
 * {
