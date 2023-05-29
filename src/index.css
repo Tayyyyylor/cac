@@ -1,0 +1,45 @@
+@font-face {
+  font-family: hoftype;
+  src: url("../fonts/hoftype.otf");
+}
+
+@font-face {
+  font-family: curveUltra;
+  src: url("../fonts/Curve/Curve-UltraBold-Italic.otf")
+}
+
+@font-face {
+  font-family: curveExtra;
+  src: url("../fonts/Curve/Curve-ExtraBold.otf")
+}
+
+@font-face {
+  font-family: curveBold;
+  src: url("../fonts/Curve/Curve-Bold.otf")
+}
+
+@font-face {
+  font-family: curveRegular;
+  src: url("../fonts/Curve/Curve-Regular.otf")
+}
+@font-face {
+  font-family: codeNextBold;
+  src: url("../fonts/codeNext/Fontfabric\ -\ Code\ Next\ ExtraBold.otf")
+}
+@font-face {
+  font-family: Kinetika;
+  src: url("../fonts/Kinetika/Kastelov\ -\ Kinetika\ Ultra.otf")
+}
+
+* {
+  font-family: 'hoftype';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Variables */
+:root{
+  --blueoptional: #134e85;
+  --blue: #A8BBBF;
+
+}
