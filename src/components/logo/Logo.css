@@ -1,0 +1,14 @@
+.main-title {
+    font-family: curveUltra;
+  font-size: 25px;
+}
+.color-letter-title {
+    font-family: curveUltra;
+    color: var(--blue)
+}
+
+@media screen and (min-width: 1024px) {
+    .main-title {
+      font-size: 45px;
+    }
+} 
