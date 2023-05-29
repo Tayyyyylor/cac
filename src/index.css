@@ -16,6 +16,18 @@
   font-family: Kinetika;
   src: url("../fonts/KinetikaUltra.otf")
 }
+@font-face {
+  font-family: Domotika;
+  src: url("../fonts/DomotikaMediumItalic.otf")
+}
+@font-face {
+  font-family: Kern;
+  src: url("../fonts/KernMedium.otf")
+}
+@font-face {
+  font-family: KernBold;
+  src: url("../fonts/KernBold.otf")
+}
 
 * {
   font-family: 'codeNextBold';
@@ -27,5 +39,7 @@
 :root{
   --blueoptional: #134e85;
   --blue: #5A5AE1;
+  --skyblue: rgb(167, 190, 192);
+  --yellow: #f9DE93;
 
 }

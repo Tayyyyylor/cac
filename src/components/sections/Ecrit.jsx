@@ -1,12 +1,21 @@
 /* eslint-disable react/no-unescaped-entities */
 import "./Section.css"
+import { useState } from "react";
 
 
 function Ecrit() {
+        const [textVisible, setTextVisible] = useState(false);
+
+        const toggleText = () => {
+                setTextVisible(!textVisible);
+              };
   return (
     <article className='article-container'>
     <section className='title-text-container'>
         <h2 className='title-article'>Langage Écrit</h2>
+        <img src="./BANNIERE.png" alt=""className="img-article"/>
+        <div className={textVisible ? 'show' : 'hide'}>
+
         <p className='text-article'>L’écriture est un moyen extraordinaire de partager notre voix et nos pensées d'une
 manière réfléchie et durable. C'est comme si nos mots prenaient vie sur la page,
 transmettant nos idées et nos émotions avec une profondeur et une clarté
@@ -31,7 +40,9 @@ impact significatif.</p>
 en toi ? Je serai là à chaque étape, mon ami, pour t'inspirer, te guider et t'encourager
 à utiliser les mots écrits comme un outil puissant pour te développer et te connecter
 avec les autres de manière profonde et authentique.</p>
-        <br/>
+        </div>
+        <button onClick={toggleText} className="button-article">{textVisible ? "Retour" : "Voir Plus"}</button>
+
         <img src='' className='img-article' alt=''/>
     </section>
 </article>

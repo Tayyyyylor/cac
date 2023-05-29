@@ -5,8 +5,9 @@ import Bio from './components/bio/Bio'
 import NonVerbal from './components/sections/NonVerbal'
 import Verbal from './components/sections/Verbal'
 import Ecrit from './components/sections/Ecrit'
-import Services from './components/sections/Services'
+import Services from './components/services/Services'
 import Temoignages from './components/temoignages/Temoignages'
+import Footer from './components/footer/Footer'
 
 function App() {
 
@@ -20,6 +21,7 @@ function App() {
     <Ecrit/>
     <Services/>
     <Temoignages/>
+    <Footer/>
     </>
   )
 }

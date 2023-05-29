@@ -1,6 +1,7 @@
 #slider {
     position: relative;
     width: 100%;
+    background-color: var(--skyblue);
 }
 
 #left {

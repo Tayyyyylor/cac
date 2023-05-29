@@ -5,27 +5,28 @@ function Temoignages() {
 
   const cardsData = [
     {
-      src:"./slide6.jpg",
+      src:"./Identitetransparent.png",
       alt:"lorem",
-      title:"lorem ipsum",
-      desc:"lorem ipsum",
+      title:"Nadège, 32 ans, commerciale",
+      desc:"Merci infiniment à Francis pour son soutien et son accompagnement précieux. Grâce à lui, j'ai pu retrouver ma confiance en moi et atteindre mes objectifs.",
     },
     {
-      src:"./slide6.jpg",
+      src:"./Identitetransparent.png",
       alt:"lorem",
-      title:"lorem ipsum",
-      desc:"lorem ipsum",
+      title:"Nadège, 32 ans, commerciale",
+      desc:"Merci infiniment à Francis pour son soutien et son accompagnement précieux. Grâce à lui, j'ai pu retrouver ma confiance en moi et atteindre mes objectifs.",
     },
     {
-      src:"./slide6.jpg",
+      src:"./Identitetransparent.png",
       alt:"lorem",
-      title:"lorem ipsum",
-      desc:"lorem ipsum",
+      title:"Nadège, 32 ans, commerciale",
+      desc:"Merci infiniment à Francis pour son soutien et son accompagnement précieux. Grâce à lui, j'ai pu retrouver ma confiance en moi et atteindre mes objectifs.",
     },
+    
   ]
   return (
     <article className="temoignage-container">
-    <h2>Temoignages</h2>
+    <h2 className="title-temoignage">Temoignages</h2>
     <section className="card-temoignage-container">
     {cardsData.slice(0, 3).map((card, index) => (
       <Cards 

@@ -25,7 +25,7 @@ function Navbar() {
           <div  className="navbar-link margin-top" >
          
 
-           taylor
+           non-verbal
  
 
           </div>

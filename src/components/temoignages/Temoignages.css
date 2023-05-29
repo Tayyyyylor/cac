@@ -1,5 +1,18 @@
+.temoignage-container {
+    padding: 2rem;
+}
+
 .card-temoignage-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.title-temoignage {
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--yellow);
+    margin-bottom: 20px;
+
 }
 

@@ -1,13 +1,20 @@
 /* eslint-disable react/no-unescaped-entities */
 import "./Section.css"
+import { useState } from "react";
 
 function Verbal() {
+        const [textVisible, setTextVisible] = useState(false);
+
+        const toggleText = () => {
+                setTextVisible(!textVisible);
+              };
   return (
-    <article className='article-container'>
+    <article className='article-container-blue'>
     <section className='title-text-container'>
         <h2 className='title-article'>Langage Verbal</h2>
-        <p className='text-article'></p>
-        <br/>
+        <img src="./BANNIERE.png" alt=""className="img-article"/>
+       <div className={textVisible ? 'show' : 'hide'}>
+
         <p className='text-article'>Le langage verbal est tout aussi essentiel que le langage non-verbal dans notre
 façon de communiquer. C'est ce que nous exprimons à travers nos mots, nos
 phrases et notre ton de voix. C'est notre façon de partager nos pensées, nos
@@ -36,8 +43,8 @@ que tu te sentes en confiance pour exprimer tes besoins, tes aspirations et tes
 suis là pour t'accompagner, mon ami, afin que tu puisses trouver ta voix et te faire
 entendre dans toutes les situations. Nous allons travailler main dans la main pour
 que tu puisses atteindre tes objectifs avec confiance et conviction.</p>
-<br/>
-        <img src='' className='img-article' alt=''/>
+       </div>
+       <button onClick={toggleText} className="button-article">{textVisible ? "Retour" : "Voir Plus"}</button>
     </section>
 </article>
   )

@@ -1,11 +1,21 @@
 /* eslint-disable react/no-unescaped-entities */
+import { useState } from "react"
 import "./Section.css"
 
 function NonVerbal() {
+
+        const [textVisible, setTextVisible] = useState(false);
+
+        const toggleText = () => {
+                setTextVisible(!textVisible);
+              };
   return (
     <article className='article-container'>
     <section className='title-text-container'>
         <h2 className='title-article'>Langage Non-verbal</h2>
+        <img src="./BANNIERE.png" alt=""className="img-article"/>
+        <div className={textVisible ? 'show' : 'hide'}>
+
         <p className='text-article'>Le langage non-verbal est incroyablement puissant. C'est une forme de
 communication qui va bien au-delà des mots. C'est ce qui se manifeste à travers
 nos gestes, nos expressions faciales et même notre posture. C'est comme si
@@ -36,8 +46,10 @@ toutes tes interactions.</p>
 <br/>
         <p className='text-article'>Alors, prêt à explorer ensemble le merveilleux monde du langage non-verbal ? Je
 suis là pour toi, mon ami. On va y arriver, et ça va être génial !</p>
-        <br/>
-        <img src='' className='img-article' alt=''/>
+        
+        </div>
+        <button onClick={toggleText} className="button-article">{textVisible ? "Retour" : "Voir Plus"}</button>
+
     </section>
 </article>
   )
