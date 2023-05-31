@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import "./Section.css"
 import { useState } from "react";
+import 'intersection-observer';
 
 
 function Ecrit() {

@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import "./Services.css"
+import 'intersection-observer';
 
 function Services() {
   return (

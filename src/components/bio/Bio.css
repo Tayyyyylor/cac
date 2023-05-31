@@ -51,9 +51,7 @@
 }
 
 .video-bio {
-    width: 100%;
-    height: 200px;
-    background-color: aquamarine;
+    text-align: center;
 }
 
 @media screen and (min-width: 1024px) {

@@ -11,7 +11,7 @@
     align-items: center;
     margin-bottom: 20px;
     padding: 2rem;
-    background-color: var(--skyblue);
+    background-image: url("./backgroundbleu.png");
 }
 
 .title-article {
@@ -50,6 +50,21 @@
     font-family: Kern;
 }
 
+.text-article-visible {
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+.text-article-visible-left {
+    animation-name: slideInLeft;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+
+
 .button-article {
     padding: 10px;
     border-radius: 100px;
@@ -58,6 +73,28 @@
     box-shadow: 3px 3px 7px grey;
     margin-top: 27px;
 }
+
+
+@keyframes slideIn {
+    0% {
+      transform: translateX(-100%);
+    }
+   
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(150%);
+    }
+   
+    100% {
+      transform: translateX(0);
+    }
+  }
 
 @media screen and (min-width: 1024px) {
     .title-article {

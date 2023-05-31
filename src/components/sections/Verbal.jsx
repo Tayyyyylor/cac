@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import "./Section.css"
+import 'intersection-observer';
 import { useState } from "react";
 
 function Verbal() {

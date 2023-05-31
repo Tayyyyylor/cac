@@ -1,4 +1,5 @@
 import "./Temoignages.css"
+import 'intersection-observer';
 import Cards from "../cards/Cards"
 
 function Temoignages() {

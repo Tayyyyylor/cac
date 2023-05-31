@@ -10,10 +10,10 @@ import Temoignages from './components/temoignages/Temoignages'
 import Footer from './components/footer/Footer'
 
 function App() {
-
+ 
   return (
     <>
-    <Header/>
+    <Header />
     <Slider/>
     <Bio/>
     <NonVerbal/>

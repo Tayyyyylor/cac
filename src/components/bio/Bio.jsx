@@ -1,4 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
+// import VideoPlayer from "../videoPlayer/VideoPlayer"
+import 'intersection-observer';
 import "./Bio.css"
 
 function Bio() {
@@ -11,7 +13,7 @@ Le fil rouge de tout ceci est la communication et la volonté de savoir qui est 
         </p>
         <span className="quotes">"</span>
       </section>
-    <div className="video-bio"></div>
+    {/* <div className="video-bio"><VideoPlayer/></div> */}
     </article>
   )
 }

@@ -72,6 +72,7 @@ nav.active {
     display: block;
     text-decoration: none;
     cursor:pointer;
+    animation: fallIn 1s ease-out forwards;
 }
 
 .nav-desktop {
@@ -86,6 +87,43 @@ nav.active {
 
 .margin-top {
     margin-top: 10px;
+}
+
+.delay-1 {
+    animation-delay: .1s;
+}
+.delay-2 {
+    animation-delay: .2s;
+}
+.delay-3 {
+    animation-delay: .3s;
+}
+.delay-4 {
+    animation-delay: .4s;
+}
+.delay-5 {
+    animation-delay: .5s;
+}
+.delay-6 {
+    animation-delay: .6s;
+}
+
+@keyframes fallIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-150%);
+      }
+
+      50% {
+        opacity: .5;
+      }
+80% {
+    opacity: 1;
+}
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
 }
 
 

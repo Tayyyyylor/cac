@@ -39,7 +39,12 @@
 :root{
   --blueoptional: #134e85;
   --blue: #5A5AE1;
-  --skyblue: rgb(167, 190, 192);
-  --yellow: #f9DE93;
+  --skyblue: #367be8;
+  /* --skyblue: rgb(167, 190, 192); */
+  --yellow: #f0ab20;
 
 }
+
+/* Animations */
+
+
