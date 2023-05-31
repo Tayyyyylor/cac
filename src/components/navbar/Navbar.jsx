@@ -1,11 +1,25 @@
 import "./Navbar.css";
 import 'intersection-observer';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 
 function Navbar() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-  const isMobile = window.innerWidth < 1024;
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+
+    // Ajouter un écouteur d'événement pour l'événement resize
+    window.addEventListener('resize', handleResize);
+
+    // Nettoyer l'écouteur d'événement lorsque le composant est démonté
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   
 
   const handleMenuIsOpen = () => {

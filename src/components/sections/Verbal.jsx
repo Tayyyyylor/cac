@@ -1,7 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import "./Section.css"
 import 'intersection-observer';
-import { useState } from "react";
+import { useState, useRef, useLayoutEffect } from "react";
+import VisibilitySensor from 'react-visibility-sensor'
 
 function Verbal() {
         const [textVisible, setTextVisible] = useState(false);
@@ -9,31 +10,76 @@ function Verbal() {
         const toggleText = () => {
                 setTextVisible(!textVisible);
               };
+              const [isVisible, setIsVisible] = useState(false);
+              const textRef = useRef(null);
+              const text2Ref = useRef(null);
+              const text3Ref = useRef(null);
+              const text4Ref = useRef(null);
+              const titleRef = useRef(null);
+              const imgRef = useRef(null);
+            
+              const handleVisibilityNonVerbal = (visible) => {
+                setIsVisible(visible);
+              };
+            
+              useLayoutEffect(() => {
+                if (isVisible) {
+                  textRef.current.classList.add("text-article-visible");
+                  text2Ref.current.classList.add("text-article-visible-left");
+                  text3Ref.current.classList.add("text-article-visible");
+                  text4Ref.current.classList.add("title-fadeIn");
+                  titleRef.current.classList.add("title-fadeIn");
+                  imgRef.current.classList.add("img-fadeIn");
+                  setIsVisible(false);
+                }
+              }, [isVisible]);
   return (
     <article className='article-container-blue'>
     <section className='title-text-container'>
-        <h2 className='title-article'>Langage Verbal</h2>
-        <img src="./BANNIERE.png" alt=""className="img-article"/>
+
+        <VisibilitySensor onChange={handleVisibilityNonVerbal}>
+        <h2 ref={titleRef} className='title-article'>Langage Verbal</h2>
+        </VisibilitySensor>
+
+        <VisibilitySensor onChange={handleVisibilityNonVerbal}>
+        <img ref={imgRef} src="./BANNIERE.png" alt=""className="img-article"/>
+        </VisibilitySensor>
+
        <div className={textVisible ? 'show' : 'hide'}>
 
-        <p className='text-article'>Le langage verbal est tout aussi essentiel que le langage non-verbal dans notre
+       <VisibilitySensor onChange={handleVisibilityNonVerbal}>
+        <p ref={textRef} className='text-article'>Le langage verbal est tout aussi essentiel que le langage non-verbal dans notre
 façon de communiquer. C'est ce que nous exprimons à travers nos mots, nos
 phrases et notre ton de voix. C'est notre façon de partager nos pensées, nos
 émotions et nos idées avec les autres.</p>
+</VisibilitySensor>
+
         <br/>
-        <p className='text-article'>La puissance des mots ne peut être sous-estimée. Ils ont le pouvoir de créer des
+
+        <VisibilitySensor onChange={handleVisibilityNonVerbal}>
+        <p ref={text2Ref} className='text-article'>La puissance des mots ne peut être sous-estimée. Ils ont le pouvoir de créer des
 liens profonds, de transmettre des encouragements chaleureux ou des critiques
 blessantes. Choisir les bons mots et les prononcer avec la bonne intention peut
 véritablement changer la donne dans nos interactions.</p>
+</VisibilitySensor>
+
         <br/>
-        <p className='text-article'>Je mets un point d'honneur à accorder une attention particulière au langage verbal.
+
+        <VisibilitySensor onChange={handleVisibilityNonVerbal}>
+        <p ref={text3Ref} className='text-article'>Je mets un point d'honneur à accorder une attention particulière au langage verbal.
 Je veux t'aider à trouver les mots justes pour exprimer qui tu es, ce que tu
 ressens et où tu veux aller dans la vie.</p>
+</VisibilitySensor>
+
         <br/>
-        <p className='text-article'>Il ne s'agit pas seulement de trouver les mots, mais aussi de comprendre comment
+
+        <VisibilitySensor onChange={handleVisibilityNonVerbal}>
+        <p ref={text4Ref} className='text-article'>Il ne s'agit pas seulement de trouver les mots, mais aussi de comprendre comment
 les utiliser efficacement. Je veux t'aider à développer ton éloquence et ta clarté.
 Que ce soit pour te préparer à ton premier entretien d'embauche ou pour être à l'aise
 lors de ton prochain rendez-vous amoureux, je suis là pour te guider.</p>
+</VisibilitySensor>
+
         <br/>
         <p className='text-article'>Chez Coeur à Coeur, je crois en l'importance de la bienveillance et de la
 compréhension. Je suis là pour t'aider à te développer et à t'épanouir. Je veux
