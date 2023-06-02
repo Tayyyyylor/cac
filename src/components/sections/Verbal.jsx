@@ -15,6 +15,8 @@ function Verbal() {
               const text2Ref = useRef(null);
               const text3Ref = useRef(null);
               const text4Ref = useRef(null);
+              const text5Ref = useRef(null);
+              const text6Ref = useRef(null);
               const titleRef = useRef(null);
               const imgRef = useRef(null);
             
@@ -27,7 +29,9 @@ function Verbal() {
                   textRef.current.classList.add("text-article-visible");
                   text2Ref.current.classList.add("text-article-visible-left");
                   text3Ref.current.classList.add("text-article-visible");
-                  text4Ref.current.classList.add("title-fadeIn");
+                  text4Ref.current.classList.add("text-article-visible-left");
+                  text5Ref.current.classList.add("text-article-visible");
+                  text6Ref.current.classList.add("text-article-visible-left");
                   titleRef.current.classList.add("title-fadeIn");
                   imgRef.current.classList.add("img-fadeIn");
                   setIsVisible(false);
@@ -42,7 +46,11 @@ function Verbal() {
         </VisibilitySensor>
 
         <VisibilitySensor onChange={handleVisibilityNonVerbal}>
-        <img ref={imgRef} src="./BANNIERE.png" alt=""className="img-article"/>
+          <div ref={imgRef} className="banniere-article">   <span className="quotes-article-start">"</span> <p className='text-article-test'>Le langage verbal est tout aussi essentiel que le langage non-verbal dans notre
+façon de communiquer. C'est ce que nous exprimons à travers nos mots, nos
+phrases et notre ton de voix. C'est notre façon de partager nos pensées, nos
+émotions et nos idées avec les autres.</p> <span className="quotes-article-end-verbal">"</span>
+</div>
         </VisibilitySensor>
 
        <div className={textVisible ? 'show' : 'hide'}>
@@ -81,15 +89,21 @@ lors de ton prochain rendez-vous amoureux, je suis là pour te guider.</p>
 </VisibilitySensor>
 
         <br/>
-        <p className='text-article'>Chez Coeur à Coeur, je crois en l'importance de la bienveillance et de la
+
+        <VisibilitySensor onChange={handleVisibilityNonVerbal}>
+        <p ref={text5Ref} className='text-article'>Chez Coeur à Coeur, je crois en l'importance de la bienveillance et de la
 compréhension. Je suis là pour t'aider à te développer et à t'épanouir. Je veux
 que tu te sentes en confiance pour exprimer tes besoins, tes aspirations et tes
 émotions avec authenticité.</p>
+</VisibilitySensor>
         <br/>
-        <p className='text-article'>Alors, prêt à explorer ensemble la puissance des mots et du langage verbal ? Je
+
+        <VisibilitySensor onChange={handleVisibilityNonVerbal}>
+        <p ref={text6Ref} className='text-article'>Alors, prêt à explorer ensemble la puissance des mots et du langage verbal ? Je
 suis là pour t'accompagner, mon ami, afin que tu puisses trouver ta voix et te faire
 entendre dans toutes les situations. Nous allons travailler main dans la main pour
 que tu puisses atteindre tes objectifs avec confiance et conviction.</p>
+</VisibilitySensor>
        </div>
        <button onClick={toggleText} className="button-article">{textVisible ? "Retour" : "Voir Plus"}</button>
     </section>

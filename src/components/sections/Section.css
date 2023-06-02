@@ -2,14 +2,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
     padding: 2rem;
+    background-color: var(--white);
+
 }
 .article-container-blue {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 20px;
     padding: 2rem;
     background-color: var(--skyblue);
 }
@@ -18,7 +18,7 @@
     font-size: 35px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    color: var(--yellow);
+    color: var(--title);
 }
 .img-article {
     max-height: 400px;
@@ -35,7 +35,7 @@
 
 .title-fadeIn {
     animation-name: fadeInTitle;
-    animation-duration: 2s;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 }
@@ -44,14 +44,23 @@
     flex-direction: column;
     align-items: center;
 }
+.banniere-article {
+background-image: url("./BANNIERE.png");
+height: 400px;
+padding: 5rem;
+position: relative;
+}
 
 .show {
-    max-width: 100%;
+  max-width: 100%;
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
 }
 .hide {
     
-    overflow: hidden;
-    height: 200px;
+    
+    display: none;
 }
 
 .text-article-container {
@@ -62,6 +71,15 @@
 .text-article {
     text-align: justify;
     font-family: Kern;
+}
+.text-article-test {
+    text-align: justify;
+    color: white;
+    position: relative;
+    font-size: 20px;
+    top: 35%;
+    font-family: Domotika;
+
 }
 
 .text-article-visible {
@@ -86,6 +104,42 @@
     border: none;
     box-shadow: 3px 3px 7px grey;
     margin-top: 27px;
+}
+
+.quotes-article-start {
+  font-size: 100px;
+  font-family: Domotika;
+  position: relative;
+  color: white;
+  top: 74%;
+  left: -4%;
+}
+
+.quotes-article-end {
+  font-size: 100px;
+  font-family: Domotika;
+  position: relative;
+  color: white;
+  top: 16%;
+  left: 38%;
+}
+
+.quotes-article-end-verbal {
+  font-size: 100px;
+  font-family: Domotika;
+  position: relative;
+  color: white;
+  top: 16%;
+  left: 76%;
+}
+
+.quotes-article-end-ecrit {
+  font-size: 100px;
+  font-family: Domotika;
+  position: relative;
+  color: white;
+  top: 16%;
+  left: 59%;
 }
 
 

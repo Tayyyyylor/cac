@@ -37,11 +37,12 @@
 }
 /* Variables */
 :root{
-  --blueoptional: #134e85;
-  --blue: #5A5AE1;
-  --skyblue: #367be8;
-  /* --skyblue: rgb(167, 190, 192); */
+  --skyblue: #81BECE;
+  --white: #E8EDE7;
   --yellow: #f0ab20;
+  --title: #012E4A;
+  /* --skyblue: #367be8; */
+  /* --skyblue: rgb(167, 190, 192); */
 
 }
 

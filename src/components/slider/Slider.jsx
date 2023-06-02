@@ -1,8 +1,12 @@
-import { useState, useEffect, useRef, useMemo } from 'react';
+import { useState, useEffect, useRef, useMemo, useLayoutEffect } from 'react';
 import "./Slider.css";
+import VisibilitySensor from "react-visibility-sensor"
+
 
 function Slider() {
   const [currentPhoto, setCurrentPhoto] = useState(0);
+  const [isVisible, setIsVisible] = useState(false);
+
 
   const photosData = useMemo(() => [
     { src: "./slide1.jpg", title:"Conseil en langage verbal - Non verbal - Écrit", description:"PAR FRANCIS DECKER"},
@@ -15,6 +19,18 @@ function Slider() {
   ], []) 
   const intervalRef = useRef(null);
   const imgRef = useRef(null);
+  const textRef = useRef(null);
+
+  useLayoutEffect(() => {
+    if (isVisible) {
+      textRef.current.classList.add("text-slider-visible");
+      setIsVisible(false); // Remettre à false pour désactiver l'animation après une seule exécution
+    }
+  }, [isVisible]);
+
+  const handleVisibilitySlider = (visible) => {
+    setIsVisible(visible);
+  };
 
 
   useEffect(() => {
@@ -40,10 +56,14 @@ function Slider() {
     <div id="slider">
       <img src={photosData[currentPhoto].src} alt="img slider" ref={imgRef} className="img-slider"/>
 
-      <div className='text-slider-container'>
+      <VisibilitySensor onChange={handleVisibilitySlider}>
+      <div ref={textRef} className='text-slider-container'>
       <h2 className='title-header' ref={imgRef}>{photosData[currentPhoto].title }</h2>
-      <p className='p-slider'>{photosData[currentPhoto].description}</p>
+
+      <p  className='p-slider'>{photosData[currentPhoto].description}</p>
       </div>
+      </VisibilitySensor>
+
     </div>
   );
 }

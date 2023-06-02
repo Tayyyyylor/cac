@@ -5,7 +5,7 @@
 
 .services-title {
     font-size: 50px;
-    color: var(--yellow);
+    color: var(--title);
     text-transform: uppercase;
     text-align: center;
 }

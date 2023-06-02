@@ -16,6 +16,7 @@ function Ecrit() {
               const text2Ref = useRef(null);
               const text3Ref = useRef(null);
               const text4Ref = useRef(null);
+              const text5Ref = useRef(null);
               const titleRef = useRef(null);
               const imgRef = useRef(null);
             
@@ -28,7 +29,8 @@ function Ecrit() {
                   textRef.current.classList.add("text-article-visible");
                   text2Ref.current.classList.add("text-article-visible-left");
                   text3Ref.current.classList.add("text-article-visible");
-                  text4Ref.current.classList.add("title-fadeIn");
+                  text4Ref.current.classList.add("text-article-visible-left");
+                  text5Ref.current.classList.add("text-article-visible");
                   titleRef.current.classList.add("title-fadeIn");
                   imgRef.current.classList.add("img-fadeIn");
                   setIsVisible(false);
@@ -43,7 +45,11 @@ function Ecrit() {
         </VisibilitySensor>
 
         <VisibilitySensor onChange={handleVisibilityNonVerbal}>
-        <img ref={imgRef} src="./BANNIERE.png" alt=""className="img-article"/>
+          <div ref={imgRef} className="banniere-article">    <span className="quotes-article-start">"</span><p className='text-article-test'>L’écriture est un moyen extraordinaire de partager notre voix et nos pensées d'une
+manière réfléchie et durable. C'est comme si nos mots prenaient vie sur la page,
+transmettant nos idées et nos émotions avec une profondeur et une clarté
+uniques.</p> <span className="quotes-article-end-ecrit">"</span>
+</div>
         </VisibilitySensor>
 
         <div className={textVisible ? 'show' : 'hide'}>
@@ -84,10 +90,13 @@ impact significatif.</p>
 </VisibilitySensor>
 
         <br/>
-        <p className='text-article'>Prêt à explorer le potentiel de l'écriture pour te guider vers le succès et la confiance
+
+        <VisibilitySensor onChange={handleVisibilityNonVerbal}>
+        <p ref={text5Ref} className='text-article'>Prêt à explorer le potentiel de l'écriture pour te guider vers le succès et la confiance
 en toi ? Je serai là à chaque étape, mon ami, pour t'inspirer, te guider et t'encourager
 à utiliser les mots écrits comme un outil puissant pour te développer et te connecter
 avec les autres de manière profonde et authentique.</p>
+</VisibilitySensor>
         </div>
         <button onClick={toggleText} className="button-article">{textVisible ? "Retour" : "Voir Plus"}</button>
 

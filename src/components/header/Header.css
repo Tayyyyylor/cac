@@ -5,6 +5,8 @@
     flex-wrap: nowrap;
     justify-content: flex-start;
     align-items: center;
+    background-color: var(--white);
+
 }
 
 @media screen and (min-width:1024px) {
