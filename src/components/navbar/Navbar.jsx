@@ -34,50 +34,76 @@ function Navbar() {
     <>
       {isMobile ? (
         <nav className={`nav-mobile ${menuIsOpen ? "active" : "" }`}>
-          <div  className="navbar-link margin-top delay-1" >
+          <button  className="navbar-link margin-top delay-1" >
+            <a href="#id-verbal">
             verbal
-          </div>
-          <div  className="navbar-link margin-top delay-2" >
+            </a>
+          </button>
+          <button  className="navbar-link margin-top delay-2" >
          
-
+          <a href="#id-non-verbal">
            non-verbal
- 
+        </a>
 
-          </div>
+          </button>
           <button className="navbar-link margin-top delay-3" >
+            <a href="#id-ecrit">
+
           écrit
+            </a>
+          
     
           </button>
-          <div className="navbar-link  delay-4">
+          <button className="navbar-link  delay-4">
+            <a href="#id-services">
+
             services
-          </div>
-          <div className="navbar-link  delay-5">
+            </a>
+          </button>
+          <button className="navbar-link  delay-5">
+            <a href="#id-temoignages">
+
             témoignages
-          </div>
-          <div className="navbar-link  delay-6">
+            </a>
+          </button>
+          <button className="navbar-link  delay-6">
+          <a href="#id-temoignages">
             contact
-          </div>
+            </a>
+          </button>
         </nav>
       ) : (
         <nav className="nav-desktop">
-          <div className="navbar-link  delay-1">
+          <button className="navbar-link  delay-1">
+            <a href="#id-verbal">
             verbal
-          </div>
-          <div className="navbar-link  delay-2">
+            </a>
+          </button>
+          <button className="navbar-link  delay-2">
+          <a href="#id-non-verbal">
            non-verbal
-          </div>
-          <div className="navbar-link  delay-3">
+           </a>
+          </button>
+          <button className="navbar-link  delay-3">
+          <a href="#id-ecrit">
            écrit 
-          </div>
-          <div className="navbar-link  delay-4">
+           </a>
+          </button>
+          <button className="navbar-link  delay-4">
+          <a href="#id-services">
             services
-          </div>
-          <div className="navbar-link  delay-5">
+            </a>
+          </button>
+          <button className="navbar-link  delay-5">
+          <a href="#id-temoignages">
             témoignages
-          </div>
-          <div className="navbar-link delay-6">
+            </a>
+          </button>
+          <button className="navbar-link delay-6">
+            <a href="#id-contact">
             contact
-          </div>
+            </a>
+          </button>
         </nav>
       )}
 

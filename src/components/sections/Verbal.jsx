@@ -34,7 +34,7 @@ function Verbal() {
                 }
               }, [isVisible]);
   return (
-    <article className='article-container-blue'>
+    <article  id="id-verbal" className='article-container-blue'>
     <section className='title-text-container'>
 
         <VisibilitySensor onChange={handleVisibilityNonVerbal}>

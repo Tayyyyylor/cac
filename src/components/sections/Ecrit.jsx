@@ -35,7 +35,7 @@ function Ecrit() {
                 }
               }, [isVisible]);
   return (
-    <article className='article-container'>
+    <article id="id-ecrit" className='article-container'>
     <section className='title-text-container'>
 
         <VisibilitySensor onChange={handleVisibilityNonVerbal}>

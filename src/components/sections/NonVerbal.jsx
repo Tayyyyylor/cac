@@ -34,7 +34,7 @@ function NonVerbal() {
               }, [isVisible]);
               
   return (
-    <article className='article-container'>
+    <article  id="id-non-verbal" className='article-container'>
     <section className='title-text-container'>
 
     <VisibilitySensor onChange={handleVisibilityNonVerbal}>

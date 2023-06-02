@@ -2,7 +2,7 @@ import "./Footer.css"
 
 function Footer() {
   return (
-   <footer className="footer-container">
+   <footer id="id-contac" className="footer-container">
     <h2 className="title-footer">Contact</h2>
     <form method="post" className="form-footer">
     <div>
