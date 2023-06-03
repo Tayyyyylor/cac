@@ -14,8 +14,6 @@ function Slider() {
     { src: "./slide3.jpg", title:"Conseil en langage verbal - Non verbal - Écrit", description:"PAR FRANCIS DECKER"},
     { src: "./slide4.jpg", title:"Conseil en langage verbal - Non verbal - Écrit", description:"PAR FRANCIS DECKER"},
     { src: "./slide5.png", title:"Conseil en langage verbal - Non verbal - Écrit", description:"PAR FRANCIS DECKER"},
-    { src: "./slide6.jpg", title:"Conseil en langage verbal - Non verbal - Écrit", description:"PAR FRANCIS DECKER"},
-    { src: "./slide7.jpg", title:"Conseil en langage verbal - Non verbal - Écrit", description:"PAR FRANCIS DECKER"},
   ], []) 
   const intervalRef = useRef(null);
   const imgRef = useRef(null);

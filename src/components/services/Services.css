@@ -5,7 +5,7 @@
 
 .services-title {
     font-size: 50px;
-    color: var(--title);
+    color: var(--blue);
     text-transform: uppercase;
     text-align: center;
 }
@@ -22,7 +22,7 @@
 }
 
 .color-text-services {
-    color: var(--yellow);
+    color: white;
 }
 .icon-text-container {
     display: flex;

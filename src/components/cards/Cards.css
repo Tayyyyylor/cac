@@ -5,7 +5,8 @@
     justify-content: space-between;
     border: 1px solid black;
     padding: 1rem;
-    width: 25%;
+    width: 20%;
+    height: 500px;
     border-radius: 20px;
     background-color: var(--skyblue);
 }
@@ -17,12 +18,14 @@
 .title-cards {
 font-family: codeNextBold;
 margin-top: 8px;
+font-size: 17px;
 }
 
 .text-cards {
     font-family: Domotika;
-    text-align: center;
-    margin: 10px 50px;
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 20px;
 
 }
 

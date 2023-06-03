@@ -15,7 +15,7 @@ entretien d'embauche.
         <div className="cards-container-services">
 
         <div className="icon-text-container">
-                <img src="./coeurjaune.png" alt="" className="img-services"/>
+                <img src="./CoeurBlanc.png" alt="" className="img-services"/>
                 <p className="icon-text-text">Avec mon coaching : <span className="color-text-services">Premier rendez-vous amoureux</span>, je vais t'accompagner pour
 que tu te sentes à l'aise et confiant lors de cette rencontre spéciale. Nous allons
 travailler sur ta communication, ton langage corporel et tes interactions pour que tu
@@ -23,7 +23,7 @@ puisses créer une connexion authentique et mémorable avec ton partenaire
 potentiel.</p>
         </div>
         <div className="icon-text-container">
-                <img src="./entretienjaune.png" alt="" className="img-services"/>
+                <img src="./EntretienBlanc.png" alt="" className="img-services"/>
                 <p className="icon-text-text">Le coaching : <span className="color-text-services">Premier entretien d'embauche</span> est une autre facette de mes
 services. Je vais te guider à travers les étapes clés de la préparation, en te
 fournissant des conseils pratiques et des techniques éprouvées pour que tu puisses
@@ -32,7 +32,7 @@ présentation, tes réponses aux questions et ta confiance en toi pour que tu pu
 faire une forte impression lors de cet entretien crucial.</p>
         </div>
         <div className="icon-text-container">
-                <img src="./reseauxjaune.png" alt="" className="img-services"/>
+                <img src="./ReseauxBlanc.png" alt="" className="img-services"/>
                 <p className="icon-text-text">Je propose un <span className="color-text-services">accompagnement personnalisé </span>sur les réseaux sociaux et l'utilisation
 du téléphone portable pour renforcer ta confiance en toi et améliorer tes
 compétences de communication. Nous explorerons ensemble comment utiliser ces
@@ -40,7 +40,7 @@ outils de manière constructive, en mettant l'accent sur la communication effica
 gestion de ton image en ligne et la création de relations solides.</p>
         </div>
         <div className="icon-text-container">
-                <img src="./atelier.png" alt="" className="img-services"/>
+                <img src="./AtelierBlanc.png" alt="" className="img-services"/>
                 <p className="icon-text-text">Un des <span className="color-text-services">ateliers</span> que je propose est une expérience unique avec un acteur jouant
 le rôle de l'employeur. Dans cet atelier interactif, tu auras l'opportunité de pratiquer et
 de simuler un véritable entretien d'embauche. Cela te permettra de te familiariser
