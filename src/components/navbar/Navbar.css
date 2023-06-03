@@ -3,7 +3,7 @@
 .nav-toggler {
     position: absolute;
     z-index: 10;
-    top: 3px;
+    top: 31px;
     right: 20px;
     height: 50px;
     width: 35px;
@@ -51,18 +51,19 @@
     width: 100%;
     min-height: 23vh;
     padding: 1rem;
-    top: 54px;
+    top: 98px;
     left: 0;
     display: flex;
     z-index: 10;
+    text-transform: uppercase;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    opacity: 0.8;
-    background: white;
+    background: var(--white);
     transform: translateY(-150%);
     transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
 }
+
 nav.active {
     transform: translate(0);
 }
@@ -70,16 +71,14 @@ nav.active {
     color: black;
     font-size: 20px;
     display: block;
-    text-decoration: none;
     cursor:pointer;
     animation: fallIn 1s ease-out forwards;
 }
-
 .link-nav {
     color: black;
     text-decoration: none;
-}
 
+}
 .nav-desktop {
     display: flex;
     flex-direction: row;
@@ -90,9 +89,10 @@ nav.active {
     text-transform: uppercase;
 }
 
-.margin-top {
-    margin-top: 10px;
-}
+
+
+
+
 
 .delay-1 {
     animation-delay: .1s;
@@ -144,7 +144,7 @@ nav.active {
     
 }
 
-.link-nav:hover {
-    color: var(--skyblue)
+.navbar-link:hover {
+    color: var(--blue)
 }
 }

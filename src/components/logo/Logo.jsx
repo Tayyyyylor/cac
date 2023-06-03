@@ -5,8 +5,11 @@ import VisibilitySensor from "react-visibility-sensor"
 function Logo() {
 
   const [isVisible, setIsVisible] = useState(false);
-  const elementRef = useRef(null);
 
+  const isMobile = window.innerWidth < 900;
+
+
+  const elementRef = useRef(null);
   const handleVisibilityLogo = (visible) => {
     setIsVisible(visible);
   };
@@ -20,10 +23,18 @@ function Logo() {
 
 
   return (
+    <>
+  {isMobile ? (
+    <img className="img-logo" src="./TRANSPARENT.png" alt=""/>
+  ) : (
     <VisibilitySensor onChange={handleVisibilityLogo}>
-   <h1 ref={elementRef} className="main-title"> De <span className="color-letter-title">c</span>oeur à <span className="color-letter-title">c</span>oeur</h1>
-    </VisibilitySensor>
-  )
+    <h1 ref={elementRef} className="main-title"> De <span className="color-letter-title">c</span>oeur à <span className="color-letter-title">c</span>oeur</h1>
+     </VisibilitySensor>
+  )}
+    
+    
+    </>
+  );
 }
 
 export default Logo

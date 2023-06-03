@@ -2,16 +2,27 @@
     padding: 2rem;
 }
 
-.card-temoignage-container {
-    display: flex;
-    justify-content: space-around;
-}
-
 .title-temoignage {
-    font-size: 50px;
     text-transform: uppercase;
     text-align: center;
     color: var(--blue);
     margin-bottom: 20px;
 }
 
+.card-temoignage-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .card-temoignage-container {
+        flex-direction: row;
+    }
+    
+    .title-temoignage {
+        font-size: 50px;
+    }
+}

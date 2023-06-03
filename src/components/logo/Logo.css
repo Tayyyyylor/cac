@@ -1,6 +1,6 @@
 .main-title {
     font-family: curveUltra;
-  font-size: 25px;
+  font-size: 4.5em;
   white-space: nowrap;
 
 }
@@ -17,6 +17,10 @@
 .color-letter-title {
     font-family: curveUltra;
     color: var(--blue)
+}
+
+.img-logo {
+  width: 100px;
 }
 
 

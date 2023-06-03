@@ -1,26 +1,13 @@
 import "./Navbar.css";
 import 'intersection-observer';
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 
 function Navbar() {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 1024);
-    };
+  const isMobile = window.innerWidth < 1024;
 
-    // Ajouter un écouteur d'événement pour l'événement resize
-    window.addEventListener('resize', handleResize);
-
-    // Nettoyer l'écouteur d'événement lorsque le composant est démonté
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-  
 
   const handleMenuIsOpen = () => {
     setMenuIsOpen(!menuIsOpen);
@@ -34,43 +21,43 @@ function Navbar() {
     <>
       {isMobile ? (
         <nav className={`nav-mobile ${menuIsOpen ? "active" : "" }`}>
-          <button  className="navbar-link margin-top delay-1" >
+          <div  className="navbar-link margin-top delay-1" >
             <a className="link-nav" href="#id-verbal">
             verbal
             </a>
-          </button>
-          <button  className="navbar-link margin-top delay-2" >
+          </div>
+          <div  className="navbar-link delay-2" >
          
           <a className="link-nav" href="#id-non-verbal">
            non-verbal
         </a>
 
-          </button>
-          <button className="navbar-link margin-top delay-3" >
+          </div>
+          <div className="navbar-link delay-3" >
             <a className="link-nav" href="#id-ecrit">
 
           écrit
             </a>
           
     
-          </button>
-          <button className="navbar-link  delay-4">
+          </div>
+          <div className="navbar-link  delay-4">
             <a className="link-nav" href="#id-services">
 
             services
             </a>
-          </button>
-          <button className="navbar-link  delay-5">
+          </div>
+          <div className="navbar-link  delay-5">
             <a className="link-nav" href="#id-temoignages">
 
             témoignages
             </a>
-          </button>
-          <button className="navbar-link  delay-6">
+          </div>
+          <div className="navbar-link  delay-6">
           <a className="link-nav" href="#id-temoignages">
             contact
             </a>
-          </button>
+          </div>
         </nav>
       ) : (
         <nav className="nav-desktop">
