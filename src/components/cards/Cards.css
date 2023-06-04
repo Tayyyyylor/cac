@@ -53,10 +53,6 @@
     
     
     .button-cards {
-        border-radius: 100px;
-        padding: 10px;
-        border: none;
-        box-shadow: 3px 3px 7px grey;
-        cursor: pointer;
+        width: 100px;
     }
 }
