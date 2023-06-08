@@ -17,3 +17,12 @@
     align-items: flex-end;
     gap: 1rem;
 }
+
+.input-container {
+    display: flex;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    
+}

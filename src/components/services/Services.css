@@ -23,12 +23,12 @@
 
 .icon-text-container {
   display: flex;
-  gap: 3rem;
+  gap: 1rem;
   align-items: center;
 }
 
 .img-services {
-    width: 20px;
+    width: 50px;
 }
   @media screen and (min-width:1024px) {
     

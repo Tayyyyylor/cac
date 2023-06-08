@@ -6,10 +6,11 @@ import 'intersection-observer';
 
 function NonVerbal() {
 
+
         const [textVisible, setTextVisible] = useState(false);
 
         const toggleText = () => {
-                setTextVisible(!textVisible);
+          setTextVisible(!textVisible);          
               };
 
               const [isVisible, setIsVisible] = useState(false);
@@ -46,14 +47,15 @@ function NonVerbal() {
 
         <VisibilitySensor onChange={handleVisibilityNonVerbal}>
           <div ref={imgRef} className="banniere-article">   <span className="quotes-article-start">"</span><p className='text-article-test'>Le langage non-verbal est incroyablement puissant. C'est une forme de
-communication qui va bien au-delà des mots. C'est ce qui se manifeste à travers
+communication qui va bien au-delà des mots. C'est ce qui se manifeste à traversz
 nos gestes, nos expressions faciales et même notre posture. C'est comme si
 notre corps avait sa propre voix, capable de transmettre des émotions, des
 intentions et des attitudes sans prononcer le moindre mot.</p> <span className="quotes-article-end">"</span>
 </div>
         </VisibilitySensor>
 
-        <div className={textVisible ? 'show' : 'hide'}>
+        <div className={textVisible ? 'show' : 'hide'}
+         >
 
         <VisibilitySensor onChange={handleVisibilityNonVerbal}>
         <p ref={text2Ref} className='text-article'>Quand on y pense, c'est assez fascinant. Nos expressions faciales peuvent révéler
@@ -96,7 +98,9 @@ suis là pour toi, mon ami. On va y arriver, et ça va être génial !</p>
         
         </div>
 
-        <button onClick={toggleText} className="button-article">{textVisible ? "Retour" : "Voir Plus"}</button>
+        <button onClick={toggleText} className="button-article">
+          {textVisible ? "Retour" : "Voir Plus"}
+        </button>
 
     </section>
 </article>
