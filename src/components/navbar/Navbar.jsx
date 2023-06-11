@@ -13,9 +13,6 @@ function Navbar() {
     setMenuIsOpen(!menuIsOpen);
   };
 
- 
-
- 
 
   return (
     <>

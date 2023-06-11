@@ -18,7 +18,7 @@
 @media screen and (min-width: 1024px) {
 
     .citation-container {
-        margin: 0 155px;
+        margin: 0 213px;
         gap: 2rem;
     }
 
@@ -56,7 +56,7 @@
         text-align: justify;
         text-justify: auto;
         font-family: Domotika;
-        font-size: 20px;
+        font-size: 23px;
     
     }
     

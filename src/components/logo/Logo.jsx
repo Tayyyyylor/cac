@@ -24,11 +24,19 @@ function Logo() {
 
   return (
     <>
-  {isMobile ? (
+      {isMobile ? (
+        <a href="/">
     <img className="img-logo" src="./TRANSPARENT.png" alt=""/>
+        </a>
   ) : (
-    <VisibilitySensor onChange={handleVisibilityLogo}>
+          <VisibilitySensor onChange={handleVisibilityLogo}>
+            <div >
+              <a href="/" className="logo-container">
+                
+    <img className="img-logo" src="./TRANSPARENT.png" alt=""/>
     <h1 ref={elementRef} className="main-title"> De <span className="color-letter-title">c</span>oeur à <span className="color-letter-title">c</span>oeur</h1>
+</a>
+            </div>
      </VisibilitySensor>
   )}
     

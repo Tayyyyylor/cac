@@ -55,7 +55,8 @@ function Slider() {
       <img src={photosData[currentPhoto].src} alt="img slider" ref={imgRef} className="img-slider"/>
 
       <VisibilitySensor onChange={handleVisibilitySlider}>
-      <div ref={textRef} className='text-slider-container'>
+        <div ref={textRef} className='text-slider-container'>
+        <img className="img-logo-slider" src="./TRANSPARENT.png" alt=""/>
       <h2 className='title-header' ref={imgRef}>{photosData[currentPhoto].title }</h2>
 
       <p  className='p-slider'>{photosData[currentPhoto].description}</p>
