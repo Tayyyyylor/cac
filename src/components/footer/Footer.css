@@ -1,14 +1,19 @@
 .footer-container {
     background-color: var(--skyblue);
-    display:flex;
-    flex-direction: column;
+}
+
+.form-rs-container {
+    display: flex;
     align-items: center;
-    
+    justify-content: space-around;
+    padding: 1rem;
 }
 
 .title-footer {
     font-size: 50px;
     color: var(--blue);
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .form-footer {
@@ -23,6 +28,51 @@
     gap: 1rem;
 }
 
+.rs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.logo-rs {
+    width: 50px;
+}
+
 @media screen and (min-width: 1024px) {
+    .footer-container {
+        background-color: var(--skyblue);
+    }
+    
+    .form-rs-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 1rem;
+    }
+    
+    .title-footer {
+        font-size: 50px;
+        color: var(--blue);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    
+    .form-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 1rem;
+    }
+    
+    .input-container {
+        display: flex;
+        gap: 1rem;
+    }
+    
+    .rs-container {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
     
 }
