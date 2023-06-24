@@ -35,6 +35,16 @@
         cursor: pointer;
     }
 
+    @keyframes slideInBottom {
+        0% {
+        transform: translateY(-150%);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+
 @media screen and (min-width:1024px) {
 
     .cards-container {
