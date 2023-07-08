@@ -62,7 +62,7 @@ function Footer() {
           onChange={handleChange}
           ></textarea>
       </div>
-        <input type="submit" value="Envoyer" disabled={!isFormValid()}/>
+        <input  className="button-form-footer" type="submit" value="Envoyer" disabled={!isFormValid()}/>
         </form>
 
         <div className="rs-container">
