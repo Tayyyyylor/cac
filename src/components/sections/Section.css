@@ -106,6 +106,18 @@ background-position: center;
 background-repeat: no-repeat;
 }
 
+.img-verbal {
+  background-image: url("../../assets/banniere.png");
+}
+
+.img-non-verbal {
+  background-image: url("/slide5.png");
+}
+
+.img-ecrit {
+  background-image: url("../../assets/banniere.png");
+}
+
 
 .text-article-container {
   overflow: hidden;

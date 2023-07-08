@@ -14,6 +14,17 @@
     background-color: var(--skyblue);
 }
 
+.title-bio {
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  color: var(--blue);
+}
+
+.text-bio-italic {
+    font-style: italic;
+}
+
 
 @media screen and (min-width: 1024px) {
 
@@ -41,11 +52,6 @@
         font-size: 70px;
     }
     
-    .title-bio {
-        font-size: 30px;
-        text-align: center;
-        margin-bottom: 20px;                                                                                                        ;
-    }
     .quotes {
         font-size: 100px;
         font-family: Domotika;
