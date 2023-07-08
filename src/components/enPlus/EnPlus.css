@@ -6,6 +6,16 @@
     margin: 50px 0;
 }
 
+.container-img-text {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 20px;
+}
+.picto-enplus {
+    width: 50px;
+}
+
 
 .title-en-plus {
     color: var(--blue);
