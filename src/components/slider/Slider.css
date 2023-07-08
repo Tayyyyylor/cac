@@ -121,7 +121,8 @@
 
   .text-slider-container {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     position: absolute;
     bottom: 50px;
   right: 20px;

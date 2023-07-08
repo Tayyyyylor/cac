@@ -46,10 +46,10 @@ function Verbal() {
         </VisibilitySensor>
 
         <VisibilitySensor onChange={handleVisibilityNonVerbal}>
-          <div ref={imgRef} className="banniere-article img-verbal">   <span className="quotes-article-start">"</span> <p className='text-article-test'>Le langage verbal est tout aussi essentiel que le langage non-verbal dans notre
+          <div ref={imgRef} className="banniere-article img-verbal"> <p className='text-article-test'>Le langage verbal est tout aussi essentiel que le langage non-verbal dans notre
 façon de communiquer. C'est ce que nous exprimons à travers nos mots, nos
 phrases et notre ton de voix. C'est notre façon de partager nos pensées, nos
-émotions et nos idées avec les autres.</p> <span className="quotes-article-end-verbal">"</span>
+émotions et nos idées avec les autres.</p>
 </div>
         </VisibilitySensor>
 

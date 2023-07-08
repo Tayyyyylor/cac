@@ -45,10 +45,10 @@ function Ecrit() {
         </VisibilitySensor>
 
         <VisibilitySensor onChange={handleVisibilityNonVerbal}>
-          <div ref={imgRef} className="banniere-article">    <span className="quotes-article-start">"</span><p className='text-article-test'>L’écriture est un moyen extraordinaire de partager notre voix et nos pensées d'une
+          <div ref={imgRef} className="banniere-article"><p className='text-article-test'>L’écriture est un moyen extraordinaire de partager notre voix et nos pensées d'une
 manière réfléchie et durable. C'est comme si nos mots prenaient vie sur la page,
 transmettant nos idées et nos émotions avec une profondeur et une clarté
-uniques.</p> <span className="quotes-article-end-ecrit">"</span>
+uniques.</p>
 </div>
         </VisibilitySensor>
 

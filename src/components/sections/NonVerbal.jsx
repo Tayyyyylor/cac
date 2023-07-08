@@ -46,11 +46,11 @@ function NonVerbal() {
         </VisibilitySensor>
 
         <VisibilitySensor onChange={handleVisibilityNonVerbal}>
-          <div ref={imgRef} className="banniere-article img-non-verbal">   <span className="quotes-article-start">"</span><p className='text-article-test'>Le langage non-verbal est incroyablement puissant. C'est une forme de
+          <div ref={imgRef} className="banniere-article img-non-verbal"><p className='text-article-test'>Le langage non-verbal est incroyablement puissant. C'est une forme de
 communication qui va bien au-delà des mots. C'est ce qui se manifeste à traversz
 nos gestes, nos expressions faciales et même notre posture. C'est comme si
 notre corps avait sa propre voix, capable de transmettre des émotions, des
-intentions et des attitudes sans prononcer le moindre mot.</p> <span className="quotes-article-end">"</span>
+intentions et des attitudes sans prononcer le moindre mot.</p>
 </div>
         </VisibilitySensor>
 
