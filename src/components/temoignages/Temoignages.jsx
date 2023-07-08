@@ -7,17 +7,17 @@ function Temoignages() {
   const cardsData = [
     {
      
-      title:"Nadège, 32 ans, commerciale",
+      title:"Nadège 32 ans",
       desc:"Merci infiniment à Francis pour son soutien et son accompagnement précieux. Grâce à lui, j'ai pu retrouver ma confiance en moi et atteindre mes objectifs.",
     },
     {
       
-      title:"Nadège, 32 ans, commerciale",
+      title:"Nadège, 32 ans",
       desc:"Merci infiniment à Francis pour son soutien et son accompagnement précieux. Grâce à lui, j'ai pu retrouver ma confiance en moi et atteindre mes objectifs.",
     },
     {
     
-      title:"Nadège, 32 ans, commerciale",
+      title:"Nadège, 32 ans",
       desc:"Merci infiniment à Francis pour son soutien et son accompagnement précieux. Grâce à lui, j'ai pu retrouver ma confiance en moi et atteindre mes objectifs.",
     },
     
