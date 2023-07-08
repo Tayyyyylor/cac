@@ -29,6 +29,17 @@
   src: url("../fonts/KernBold.otf")
 }
 
+@font-face {
+  font-family: bigPro;
+  src: url("../fonts/bigProBold.otf")
+}
+
+@font-face {
+  font-family: akiv;
+  src: url("../fonts/AktivGrotesk-Black.otf")
+}
+
+
 * {
   font-family: 'codeNextBold';
   margin: 0;

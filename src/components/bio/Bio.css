@@ -15,8 +15,9 @@
 }
 
 .title-bio {
-    font-size: 50px;
     margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
     text-transform: uppercase;
   color: var(--blue);
 }
@@ -44,7 +45,10 @@
         text-align: center;
     }
     
-    
+    .title-bio {
+        font-size: 50px;
+    }
+
     .title-container {
         display: flex;
         flex-direction: column;

@@ -14,7 +14,14 @@
   margin-top: 30px;
   margin-bottom: 30px;
 }
-
+.desc-services-container {
+margin-top: 50px;
+margin: 0 70px;
+text-align: justify;
+}
+.text-desc-services {
+  margin-bottom: 20px;
+}
 .cards-container-services {
   display: flex;
   flex-direction: column;
@@ -30,10 +37,17 @@
 .img-services {
     width: 50px;
 }
+
+
+.title-services {
+  margin-bottom: 20px;
+  color: var(--blue);
+}
   @media screen and (min-width:1024px) {
     
     .services-title {
         font-size: 50px;
+        margin-bottom: 30px;
     }
     
  
@@ -44,8 +58,9 @@
     }
     
     .color-text-services {
-        color: white;
+        color: var(--blue);
     }
+
     .icon-text-container {
         display: flex;
         margin: 0 100px;

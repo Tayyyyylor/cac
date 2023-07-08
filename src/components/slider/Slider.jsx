@@ -9,7 +9,7 @@ function Slider() {
 
 
   const photosData = useMemo(() => [
-    { src: "./slide1.jpg", title:"Conseil en langage verbal - Non verbal - Écrit", description:"PAR FRANCIS DECKER"},
+    { src: "./photo-atelier.png", title:"Conseil en langage verbal - Non verbal - Écrit", description:"PAR FRANCIS DECKER"},
     { src: "./slide2.jpg", title:"Conseil en langage verbal - Non verbal - Écrit", description:"PAR FRANCIS DECKER"},
     { src: "./slide3.jpg", title:"Conseil en langage verbal - Non verbal - Écrit", description:"PAR FRANCIS DECKER"},
     { src: "./slide4.jpg", title:"Conseil en langage verbal - Non verbal - Écrit", description:"PAR FRANCIS DECKER"},

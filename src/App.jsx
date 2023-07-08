@@ -8,6 +8,7 @@ import Ecrit from './components/sections/Ecrit'
 import Services from './components/services/Services'
 import Temoignages from './components/temoignages/Temoignages'
 import Footer from './components/footer/Footer'
+import Contact from './components/contact/Contact'
 
 function App() {
  
@@ -20,7 +21,8 @@ function App() {
     <Verbal/>
     <Ecrit/>
     <Services/>
-    <Temoignages/>
+      <Temoignages />
+      <Contact/>
     <Footer/>
     </>
   )

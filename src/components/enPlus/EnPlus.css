@@ -1,0 +1,13 @@
+.en-plus-container {
+    background-color: var(--skyblue);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem;
+    margin: 50px 0;
+}
+
+
+.title-en-plus {
+    color: var(--blue);
+    margin-bottom: 20px;
+}
