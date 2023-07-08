@@ -10,10 +10,10 @@ function Slider() {
 
   const photosData = useMemo(() => [
     { src: "./photo-atelier.png", title:"Conseil en langage verbal - Non verbal - Écrit", description:"PAR FRANCIS DECKER"},
-    { src: "./francis-conf.png", title:"Conseil en langage verbal - Non verbal - Écrit", description:"PAR FRANCIS DECKER"},
-    { src: "./francis-griffe.png", title:"Conseil en langage verbal - Non verbal - Écrit", description:"PAR FRANCIS DECKER"},
-    { src: "./francis-nonverbal.png", title:"Conseil en langage verbal - Non verbal - Écrit", description:"PAR FRANCIS DECKER"},
-    { src: "./photo_atelier.png", title:"Conseil en langage verbal - Non verbal - Écrit", description:"PAR FRANCIS DECKER"},
+    { src: "/public/francis-conf.png", title:"Conseil en langage verbal - Non verbal - Écrit", description:"PAR FRANCIS DECKER"},
+    { src: "/public/francis-griffe.png", title:"Conseil en langage verbal - Non verbal - Écrit", description:"PAR FRANCIS DECKER"},
+    { src: "/public/francis-nonverbal.png", title:"Conseil en langage verbal - Non verbal - Écrit", description:"PAR FRANCIS DECKER"},
+    { src: "/public/photo_atelier.png", title:"Conseil en langage verbal - Non verbal - Écrit", description:"PAR FRANCIS DECKER"},
   ], []) 
   const intervalRef = useRef(null);
   const imgRef = useRef(null);
