@@ -51,7 +51,7 @@ text-align: justify;
         height: 60px;
         font-size: 20px;
         box-shadow: 3px 3px 7px var(--blue);
-        width: 500px;
+        width: 90%;
     }
 
 @media screen and (min-width: 1024px) {
@@ -106,6 +106,9 @@ text-align: justify;
         font-weight: bolder;
         font-family: curveBold;
         
+    }
+    .button-bio {
+        width: 90%;
     }
     
 }

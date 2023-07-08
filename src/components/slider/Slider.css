@@ -32,6 +32,10 @@
   
 
 }
+
+.text-slider-container {
+ display: none;
+}
 .text-slider-visible {
  
     animation-name: fadeInSlider;
@@ -51,14 +55,7 @@
   width: 100px;
 }
 
-  .text-slider-container {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 50px;
-  left: 30px;
-  margin: 0;
-  }
+ 
 
   @keyframes fadeInSlider {
     0% {
@@ -129,7 +126,7 @@
   left: 20px;
   margin: 0;
   }
-
+ 
   @keyframes fadeInSlider {
     0% {
       opacity: 0;

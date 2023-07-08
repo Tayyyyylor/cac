@@ -3,6 +3,7 @@
     display: flex;
     flex-direction: column;
     padding: 1rem;
+    background-color: var(--skyblue);
 }
 
 .title-contact {
@@ -74,7 +75,9 @@
     align-self: end;
     margin-top: 10px;
 }
-
+.logo-rs {
+    width: 50px;
+}
 @media screen and (min-width: 1024px) {
 
 .title-contact {
@@ -96,7 +99,9 @@
 .form-contact-container {
     flex: 1;
 }
-
+.logo-rs {
+    width: 100px;
+}
 .logo-contact-container {
     flex: 1;
     display: block;

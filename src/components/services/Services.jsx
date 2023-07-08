@@ -59,11 +59,6 @@ const isMobile = window.innerWidth < 1024;
                 </div>
         
         
-                <div className="icon-text-container">
-                                                  <img src="./AtelierBlanc.png" alt="" className="img-services" />
-                        <h2>Préparation au(x) rendez-vous amoureux</h2>                          
-                </div>
-        
                 </div>
          </article> 
         ) :  ( <article  id="id-services" className="services-container">
