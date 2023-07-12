@@ -1,10 +1,10 @@
 import "./EnPlus.css"
-import conference from "../../../public/conference.png"
-import domicileDemandeur from "../../../public/domiciledemandeur.png"
-import faceaface from "../../../public/faceaface.png"
-import domicile from "../../../public/maison2.png"
-import podcast from "../../../public/podcast.png"
-import visio from "../../../public/visio.png"
+import conference from "/conference.png"
+import domicileDemandeur from "/domiciledemandeur.png"
+import faceaface from "/faceaface.png"
+import domicile from "/maison2.png"
+import podcast from "/podcast.png"
+import visio from "/visio.png"
 
 
 

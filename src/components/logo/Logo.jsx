@@ -26,7 +26,7 @@ function Logo() {
     <>
       {isMobile ? (
         <a href="/">
-    <img className="img-logo" src="./TRANSPARENT.png" alt=""/>
+    <img className="img-logo" src="/TRANSPARENT.png" alt=""/>
         </a>
   ) : (
           <VisibilitySensor onChange={handleVisibilityLogo}>

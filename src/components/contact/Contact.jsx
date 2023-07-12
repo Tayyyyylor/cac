@@ -1,7 +1,7 @@
 import "./Contact.css"
-import logoInstagram from "../../assets/instagramColor.png"
-import logoFacebook from "../../assets/facebook.png"
-import logo from "../../../public/TRANSPARENT.png"
+import logoInstagram from "/instagramColor.png"
+import logoFacebook from "/facebook.png"
+import logo from "/TRANSPARENT.png"
 
 function Contact() {
   return (

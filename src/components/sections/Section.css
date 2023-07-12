@@ -58,15 +58,15 @@
   }
 
   .img-verbal {
-    background-image: url("../../../public/slide1.jpg");
+    background-image: url("/slide1.jpg");
   }
   
   .img-non-verbal {
-    background-image: url("../../assets/banniere.png");
+    background-image: url("/banniere.png");
   }
 
   .img-ecrit {
-    background-image: url("../../assets/banniere.png");
+    background-image: url("/banniere.png");
   }
   
 
