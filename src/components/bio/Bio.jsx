@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 
 function Bio() {
  
+  const [textVisible, setTextVisible] = useState(false);
   const bioRef = useRef(null);
 
   useEffect(() => {
@@ -12,7 +13,7 @@ function Bio() {
     const text = ` "Savoir vraiment communiquer avec ses semblables, c'est se sentir plus vivant, c'est affirmer son existence de manière plus prononcée." `
     let index = 0;
 
-    function typeWriter() {
+    const typeWriter = () => {
       if (index < text.length) {
         textElement.textContent += text.charAt(index);
         index++;
@@ -22,8 +23,6 @@ function Bio() {
 
     typeWriter();
   }, []);
-
-  const [textVisible, setTextVisible] = useState(false);
 
 
   const toggleText = () => {

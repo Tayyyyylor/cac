@@ -3,7 +3,7 @@ import "./Modal.css";
 
 function Modal({ modal, closeModal }) {
 
-  function cancelHandler() {
+  const cancelHandler = () => {
     closeModal()
   }
 
